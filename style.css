@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+nav {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+nav li {
+    margin: 0.5rem 1rem;
+}
+
+nav a {
+    color: #1e3c72;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background: #1e3c72;
+    color: white;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+.section {
+    background: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.section h2 {
+    color: #1e3c72;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #2a5298;
+    padding-bottom: 0.5rem;
+}
+
+.info-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #2a5298;
+}
+
+.info-card p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.repair-card {
+    background: #fff;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s;
+}
+
+.repair-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-color: #2a5298;
+}
+
+.repair-card h3 {
+    color: #1e3c72;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.difficulty {
+    display: inline-block;
+    background: #ffc107;
+    color: #000;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.repair-card ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.repair-card li {
+    margin: 0.5rem 0;
+    padding-left: 0.5rem;
+}
+
+.note {
+    background: #d1ecf1;
+    border-left: 4px solid #0c5460;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.warning {
+    background: #fff3cd;
+    border-left: 4px solid #856404;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+footer {
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 0.3rem 0;
+    }
+    
+    .section {
+        padding: 1.5rem;
+    }
+    
+    .section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .section {
+        padding: 1rem;
+    }
+    
+    .repair-card {
+        padding: 1rem;
+    }
+}
