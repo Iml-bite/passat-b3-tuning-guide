@@ -83,6 +83,9 @@
             width: 100%;
             border-collapse: collapse;
             margin: 1.5rem 0;
+            display: block;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
         }
         
         .specs-table th,
@@ -90,6 +93,18 @@
             padding: 1rem;
             text-align: left;
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            white-space: nowrap;
+        }
+        
+        @media (max-width: 768px) {
+            .specs-table {
+                font-size: 0.85rem;
+            }
+            
+            .specs-table th,
+            .specs-table td {
+                padding: 0.6rem 0.4rem;
+            }
         }
         
         .specs-table th {
