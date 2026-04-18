@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тюнинг VW Passat B3 - VR6 2.8</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin: 1rem;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero-section p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .gallery-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .gallery-caption {
+            padding: 1rem;
+            color: white;
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        .tuning-stage {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            color: white;
+        }
+        
+        .tuning-stage h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        .specs-table th,
+        .specs-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .specs-table th {
+            background: rgba(255, 255, 255, 0.1);
+            font-weight: 600;
+        }
+        
+        .power-badge {
+            display: inline-block;
+            background: rgba(76, 175, 80, 0.3);
+            border: 1px solid rgba(76, 175, 80, 0.5);
+            padding: 0.5rem 1rem;
+            border-radius: 12px;
+            font-weight: 600;
+            margin: 0.5rem;
+        }
+        
+        .cost-badge {
+            display: inline-block;
+            background: rgba(255, 152, 0, 0.3);
+            border: 1px solid rgba(255, 152, 0, 0.5);
+            padding: 0.5rem 1rem;
+            border-radius: 12px;
+            font-weight: 600;
+            margin: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🏁 Тюнинг Passat B3</h1>
+            <p class="subtitle">VR6 2.8 - Легендарный двигатель</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">🏠 Главная</a></li>
+                <li><a href="#gallery">📸 Галерея</a></li>
+                <li><a href="#stages">🔧 Этапы тюнинга</a></li>
+                <li><a href="#specs">📊 Характеристики</a></li>
+                <li><a href="#tips">💡 Советы</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <h1>VR6 2.8 - Мощь и звук</h1>
+        <p>Узкоугольный V6 с уникальным звучанием и огромным потенциалом</p>
+    </div>
+
+    <main class="container">
+        <section id="gallery" class="section">
+            <h2>📸 Галерея тюнингованных Passat B3</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white;">
+                        <div style="font-size: 4rem; margin-bottom: 0.5rem;">🚗</div>
+                        <div style="font-size: 1.2rem; font-weight: 600;">VW Passat B3</div>
+                    </div>
+                    <div class="gallery-caption">Классический VR6 на BBS дисках</div>
+                </div>
+                <div class="gallery-item">
+                    <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #c31432 0%, #240b36 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white;">
+                        <div style="font-size: 4rem; margin-bottom: 0.5rem;">🏁</div>
+                        <div style="font-size: 1.2rem; font-weight: 600;">Tuned B3</div>
+                    </div>
+                    <div class="gallery-caption">Заниженная подвеска + спортивный обвес</div>
+                </div>
+                <div class="gallery-item">
+                    <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white;">
+                        <div style="font-size: 4rem; margin-bottom: 0.5rem;">⚙️</div>
+                        <div style="font-size: 1.2rem; font-weight: 600;">VR6 2.8</div>
+                    </div>
+                    <div class="gallery-caption">VR6 2.8 - моторный отсек</div>
+                </div>
+                <div class="gallery-item">
+                    <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #eb3349 0%, #f45c43 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white;">
+                        <div style="font-size: 4rem; margin-bottom: 0.5rem;">💨</div>
+                        <div style="font-size: 1.2rem; font-weight: 600;">Exhaust</div>
+                    </div>
+                    <div class="gallery-caption">Спортивная выхлопная система</div>
+                </div>
+                <div class="gallery-item">
+                    <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #232526 0%, #414345 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white;">
+                        <div style="font-size: 4rem; margin-bottom: 0.5rem;">🪑</div>
+                        <div style="font-size: 1.2rem; font-weight: 600;">Interior</div>
+                    </div>
+                    <div class="gallery-caption">Спортивный салон с Recaro</div>
+                </div>
+                <div class="gallery-item">
+                    <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #141e30 0%, #243b55 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; color: white;">
+                        <div style="font-size: 4rem; margin-bottom: 0.5rem;">🌙</div>
+                        <div style="font-size: 1.2rem; font-weight: 600;">Night Style</div>
+                    </div>
+                    <div class="gallery-caption">Ночной стайлинг</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="specs" class="section">
+            <h2>📊 Характеристики VR6 2.8</h2>
+            <table class="specs-table">
+                <tr>
+                    <th>Параметр</th>
+                    <th>Сток</th>
+                    <th>Stage 1</th>
+                    <th>Stage 2</th>
+                    <th>Stage 3</th>
+                </tr>
+                <tr>
+                    <td>Мощность (л.с.)</td>
+                    <td>174</td>
+                    <td>195</td>
+                    <td>220</td>
+                    <td>280+</td>
+                </tr>
+                <tr>
+                    <td>Крутящий момент (Нм)</td>
+                    <td>240</td>
+                    <td>265</td>
+                    <td>290</td>
+                    <td>350+</td>
+                </tr>
+                <tr>
+                    <td>0-100 км/ч (сек)</td>
+                    <td>9.0</td>
+                    <td>8.2</td>
+                    <td>7.5</td>
+                    <td>6.5</td>
+                </tr>
+                <tr>
+                    <td>Макс. скорость (км/ч)</td>
+                    <td>215</td>
+                    <td>230</td>
+                    <td>245</td>
+                    <td>260+</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="stages" class="section">
+            <h2>🔧 Этапы тюнинга VR6 2.8</h2>
+
+            <div class="tuning-stage">
+                <h3>Stage 1 - Базовый тюнинг</h3>
+                <div class="power-badge">+20-30 л.с.</div>
+                <div class="cost-badge">~40 000-95 000 ₽</div>
+                
+                <h4>Что делаем:</h4>
+                <ul>
+                    <li><strong>Впускной коллектор от VR6 2.9</strong> - увеличенное сечение, лучшее наполнение (+10-15 л.с.)</li>
+                    <li><strong>Форсунки увеличенного объёма</strong> - 280-300 cc/min вместо стоковых 220 cc/min</li>
+                    <li><strong>Производительный бензонасос</strong> - Bosch 044 или Walbro 255 lph</li>
+                    <li><strong>Чип-тюнинг ЭБУ</strong> - оптимизация топливных карт и зажигания под новые форсунки</li>
+                    <li><strong>Спортивный воздушный фильтр</strong> - K&N или аналог (лучше дыхание)</li>
+                    <li><strong>Прямоточный выхлоп</strong> - удаление катализатора, резонатора</li>
+                    <li><strong>Холодный впуск</strong> - забор воздуха снаружи</li>
+                </ul>
+                
+                <h4>Результат:</h4>
+                <p>Прирост ~20-30 л.с., значительно улучшенная отзывчивость педали газа. Коллектор от 2.9 даёт заметную прибавку на средних оборотах. Форсунки и бензонасос обеспечивают стабильную подачу топлива. Характерный звук VR6 становится громче и агрессивнее. Расход топлива +5-10%.</p>
+                
+                <p class="note">💡 Самый простой и безопасный этап. Не требует вмешательства в механику двигателя.</p>
+            </div>
+
+            <div class="tuning-stage">
+                <h3>Stage 2 - Продвинутый тюнинг</h3>
+                <div class="power-badge">+45 л.с.</div>
+                <div class="cost-badge">~120 000-200 000 ₽</div>
+                
+                <h4>Что делаем:</h4>
+                <ul>
+                    <li><strong>Распредвалы</strong> - спортивные валы с увеличенным подъёмом (Schrick, Cat Cams)</li>
+                    <li><strong>Портинг ГБЦ</strong> - расширение и полировка каналов</li>
+                    <li><strong>Облегчённый маховик</strong> - быстрее раскручивается</li>
+                    <li><strong>Спортивное сцепление</strong> - усиленное, выдерживает больший момент</li>
+                    <li><strong>Выхлопная система 2.5"</strong> - полностью прямоточная с коллектором</li>
+                    <li><strong>Настройка ЭБУ под новые валы</strong></li>
+                </ul>
+                
+                <h4>Результат:</h4>
+                <p>Прирост ~45 л.с., двигатель "дышит" намного лучше, отличная тяга на средних и высоких оборотах. Звук становится ещё более агрессивным.</p>
+                
+                <p class="warning">⚠️ Требуется опыт работы с ГБЦ. Рекомендуется делать в специализированном сервисе.</p>
+            </div>
+
+            <div class="tuning-stage">
+                <h3>Stage 3 - Экстремальный тюнинг</h3>
+                <div class="power-badge">+100+ л.с.</div>
+                <div class="cost-badge">~400 000-800 000+ ₽</div>
+                
+                <h4>Что делаем:</h4>
+                <ul>
+                    <li><strong>Компрессор (Supercharger)</strong> - Eaton M62 или VF Engineering</li>
+                    <li><strong>Турбонаддув</strong> - кастомный турбокит (альтернатива компрессору)</li>
+                    <li><strong>Кованые поршни</strong> - выдерживают высокое давление</li>
+                    <li><strong>Усиленные шатуны</strong> - H-образные кованые</li>
+                    <li><strong>Форсунки увеличенного объёма</strong></li>
+                    <li><strong>Топливный насос высокой производительности</strong></li>
+                    <li><strong>Интеркулер</strong> - охлаждение наддувочного воздуха</li>
+                    <li><strong>Программируемый ЭБУ</strong> - Megasquirt, Haltech</li>
+                    <li><strong>Усиленная КПП</strong> - 02M или 02J с LSD</li>
+                </ul>
+                
+                <h4>Результат:</h4>
+                <p>Мощность 280-350+ л.с. в зависимости от давления наддува. Автомобиль превращается в настоящую ракету. 0-100 км/ч за 6-7 секунд.</p>
+                
+                <p class="warning">⚠️ Серьёзное вмешательство в конструкцию. Требуется полная переборка двигателя, усиление трансмиссии, тормозов, подвески. Только для опытных!</p>
+            </div>
+        </section>
+
+        <section id="tips" class="section">
+            <h2>💡 Полезные советы по тюнингу VR6</h2>
+            
+            <div class="repair-card">
+                <h3>1. Начинайте с малого</h3>
+                <p>Не спешите сразу ставить турбо. Начните с Stage 1, прочувствуйте машину, потом двигайтесь дальше. Многие останавливаются на Stage 2 - это оптимальный баланс мощности и надёжности.</p>
+            </div>
+
+            <div class="repair-card">
+                <h3>2. Не забывайте про тормоза</h3>
+                <p>Увеличили мощность? Обязательно улучшите тормоза! Минимум - спортивные колодки и тормозная жидкость DOT 5.1. Идеально - тормоза от Golf R32 или Brembo.</p>
+            </div>
+
+            <div class="repair-card">
+                <h3>3. Подвеска тоже важна</h3>
+                <p>Стоковая подвеска не справится с увеличенной мощностью. Поставьте койловеры (KW, BC Racing) или хотя бы спортивные амортизаторы + пружины. Стабилизаторы поперечной устойчивости тоже не помешают.</p>
+            </div>
+
+            <div class="repair-card">
+                <h3>4. Охлаждение - ключ к надёжности</h3>
+                <p>VR6 греется. Поставьте алюминиевый радиатор увеличенного объёма, дополнительный масляный радиатор. Следите за температурой масла - она не должна превышать 110°C.</p>
+            </div>
+
+            <div class="repair-card">
+                <h3>5. Качественное масло и топливо</h3>
+                <p>Используйте синтетику 5W-40 или 5W-50 (Motul, Liqui Moly). Топливо - минимум АИ-98, а лучше АИ-100. На Stage 3 может потребоваться гоночное топливо.</p>
+            </div>
+
+            <div class="repair-card">
+                <h3>6. Диагностика и настройка</h3>
+                <p>После любых доработок обязательно делайте настройку на динамометрическом стенде. Неправильная настройка может убить двигатель за пару тысяч километров.</p>
+            </div>
+
+            <div class="repair-card">
+                <h3>7. Бюджет на непредвиденное</h3>
+                <p>Всегда закладывайте +30-50% к бюджету. Что-то обязательно пойдёт не так: сломается инструмент, понадобятся дополнительные детали, найдутся скрытые проблемы.</p>
+            </div>
+
+            <div class="repair-card">
+                <h3>8. Сообщество и опыт других</h3>
+                <p>Вступайте в клубы VW, форумы, группы в соцсетях. Там огромный опыт людей, которые уже прошли этот путь. Учитесь на чужих ошибках, а не на своих.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🎬 Звук VR6 - почему он особенный?</h2>
+            <div class="repair-card">
+                <p>VR6 имеет уникальную конструкцию - узкий угол развала цилиндров (15°) и одну общую головку блока. Это создаёт неповторимое звучание, которое не спутаешь ни с чем.</p>
+                
+                <p>На стоке звук глубокий и благородный. С прямотоком - агрессивный рык, особенно на высоких оборотах. Многие владельцы говорят, что звук VR6 - это 50% удовольствия от владения.</p>
+                
+                <p class="note">💡 Совет: не ставьте слишком громкий выхлоп. Оптимально - прямоток с небольшим резонатором. Звук будет мощным, но не раздражающим.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📝 Чек-лист перед тюнингом</h2>
+            <div class="repair-card">
+                <h3>Проверьте состояние базовых систем:</h3>
+                <ul>
+                    <li>✅ Компрессия в цилиндрах (должна быть ровной, 11-12 бар)</li>
+                    <li>✅ Состояние ГРМ (цепь не должна быть растянута)</li>
+                    <li>✅ Отсутствие течей масла и антифриза</li>
+                    <li>✅ Исправность системы охлаждения</li>
+                    <li>✅ Состояние сцепления (если планируете Stage 2+)</li>
+                    <li>✅ Исправность турбины (если есть)</li>
+                    <li>✅ Отсутствие ошибок в ЭБУ</li>
+                </ul>
+                <p class="warning">⚠️ Тюнинговать больной двигатель - выбрасывать деньги на ветер. Сначала приведите всё в порядок!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>⚠️ Тюнинг выполняется на свой риск. Увеличение мощности влияет на ресурс двигателя и трансмиссии.</p>
+            <p>🏁 Удачи в постройке вашего идеального Passat B3 VR6!</p>
+            <p>© 2026 Passat B3 Tuning Guide</p>
+        </div>
+    </footer>
+</body>
+</html>
